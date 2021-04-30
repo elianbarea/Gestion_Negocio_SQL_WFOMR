@@ -26,6 +26,7 @@ namespace TP2_PROG__3
 
             try
             { 
+                ///este es un comentario
                 ListarArticulo = localnegocio.listar();
                 dgvArticulos.DataSource = ListarArticulo;
                 dgvArticulos.Columns["Marca"].Visible = false;
