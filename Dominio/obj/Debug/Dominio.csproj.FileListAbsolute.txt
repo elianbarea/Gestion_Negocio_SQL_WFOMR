@@ -1,0 +1,17 @@
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-\Dominio\bin\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-\Dominio\bin\Debug\Dominio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-\Dominio\obj\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-\Dominio\obj\Debug\Dominio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.0\Dominio\bin\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.0\Dominio\bin\Debug\Dominio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.0\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.0\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.0\Dominio\obj\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.0\Dominio\obj\Debug\Dominio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.1\Dominio\bin\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.1\Dominio\bin\Debug\Dominio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.1\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.1\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.1\Dominio\obj\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TRABAJO PRACTICO 2\Actividad-2-PROG3-.1.1\Dominio\obj\Debug\Dominio.pdb
