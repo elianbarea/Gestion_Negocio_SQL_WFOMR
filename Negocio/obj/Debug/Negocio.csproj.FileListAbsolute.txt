@@ -1,0 +1,2 @@
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache

@@ -1,0 +1,15 @@
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\bin\Debug\TP2 PROG _3.exe.config
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\bin\Debug\TP2 PROG _3.exe
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\bin\Debug\TP2 PROG _3.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\bin\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\bin\Debug\Negocio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\bin\Debug\Dominio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\bin\Debug\Negocio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2 PROG _3.csprojAssemblyReference.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2_PROG__3.comercio.resources
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2_PROG__3.Properties.Resources.resources
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2 PROG _3.csproj.GenerateResource.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2 PROG _3.csproj.CoreCompileInputs.cache
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2 PROG _3.csproj.CopyComplete
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2 PROG _3.exe
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2 PROG _3.pdb
