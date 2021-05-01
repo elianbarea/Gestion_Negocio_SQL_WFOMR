@@ -54,16 +54,83 @@ namespace Negocio
             finally
             {
                 datos.cerrarConexion();
+            }   
+
+        }
+
+        public List<Marca> listarmarca()
+        {
+            List<Marca> marca = new List<Marca>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("select * from MARCAS");
+                datos.ejecutarlectura();
+
+                while (datos.Lector.Read())
+                {
+                    Marca m = new Marca();
+                    m.descripcion = (string)datos.Lector["Descripcion"];
+                    m.Id = (int)datos.Lector["Id"];
+
+                    marca.Add(m);
+                
+                }
+                return marca;
+
+                }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+
+        }
+
+        public List<Categoria> listarcategoria()
+        {
+            List<Categoria> categoria = new List<Categoria>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("select * from CATEGORIAS");
+                datos.ejecutarlectura();
+
+                while (datos.Lector.Read())
+                {
+                    Categoria m = new Categoria ();
+                    m.descripcion = (string)datos.Lector["Descripcion"];
+                    m.Id = (int)datos.Lector["Id"];
+
+                    categoria.Add(m);
+
+                }
+                return categoria;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
 
 
 
-
-            
-
         }
 
-        public void eliminar(string id)
+
+public void eliminar(string id)
         { 
             AccesoDatos datos = new AccesoDatos();
 
@@ -98,10 +165,11 @@ namespace Negocio
                 datos.AgregarParametro("@codigo",ar.Cod_articulo) ;
                 datos.AgregarParametro("@nombre",ar.Nombre);
                 datos.AgregarParametro("@descripcion",ar.Descripcion);
-                datos.AgregarParametro("@IdMarca", ar.Marca.descripcion);
-                datos.AgregarParametro("@IdCategoria",ar.Descripcion );
+                datos.AgregarParametro("@IdMarca", Convert.ToString( ar.Marca.Id));
+                datos.AgregarParametro("@IdCategoria",Convert.ToString(ar.Categoria.Id));
                 datos.AgregarParametro("@ImagenUrl",ar.Imagen);
                 datos.AgregarParametro("@Precio", Convert.ToString(ar.Precio));
+                datos.ejecutarAcion();
                 
 
 
@@ -120,10 +188,17 @@ namespace Negocio
 
 
         }
+
+
+    }
+
+
+        
         
 
 
 
     }
-}
+
+
 

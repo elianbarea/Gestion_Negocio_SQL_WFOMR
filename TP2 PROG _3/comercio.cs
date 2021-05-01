@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
 using Dominio;
-using TP2_PROG_3;
+using TP2_PROG__3;
 
 
 
@@ -26,8 +26,14 @@ namespace TP_PROG_3
 
         private void comercio_Load(object sender, EventArgs e)
         {
-            localNegocio localnegocio = new localNegocio();
 
+            cargarGrilla();
+
+        }
+
+        public void cargarGrilla()
+        {
+            localNegocio localnegocio = new localNegocio();
             try
             {
                 ListarArticulo = localnegocio.listar();
@@ -36,7 +42,7 @@ namespace TP_PROG_3
                 dgvArticulos.Columns["Categoria"].Visible = false;*/
                 dgvArticulos.Columns["Imagen"].Visible = false;
                 cargarImagen(ListarArticulo[0].Imagen);
-                 
+
             }
             catch (Exception ex)
             {
@@ -47,7 +53,11 @@ namespace TP_PROG_3
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-          
+            Form formu = new FrmAgregar();
+            formu.ShowDialog();
+            cargarGrilla();
+
+
 
         }
 
