@@ -9,3 +9,10 @@ C:\Users\USUARIO\Desktop\TPwinform\tpWinform\Negocio\obj\Debug\Negocio.csproj.Co
 C:\Users\USUARIO\Desktop\TPwinform\tpWinform\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\USUARIO\Desktop\TPwinform\tpWinform\Negocio\obj\Debug\Negocio.dll
 C:\Users\USUARIO\Desktop\TPwinform\tpWinform\Negocio\obj\Debug\Negocio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\bin\Debug\Negocio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\bin\Debug\Negocio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\bin\Debug\Dominio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\bin\Debug\Dominio.pdb
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\obj\Debug\Negocio.dll
+C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\Negocio\obj\Debug\Negocio.pdb

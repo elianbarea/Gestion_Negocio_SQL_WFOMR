@@ -32,8 +32,8 @@ namespace TP_PROG_3
             {
                 ListarArticulo = localnegocio.listar();
                 dgvArticulos.DataSource = ListarArticulo;
-                dgvArticulos.Columns["Marca"].Visible = false;
-                dgvArticulos.Columns["Categoria"].Visible = false;
+                /*dgvArticulos.Columns["Marca"].Visible = false;
+                dgvArticulos.Columns["Categoria"].Visible = false;*/
                 dgvArticulos.Columns["Imagen"].Visible = false;
                 cargarImagen(ListarArticulo[0].Imagen);
                  
@@ -50,6 +50,8 @@ namespace TP_PROG_3
           
 
         }
+
+
         public void cargarImagen(string imagen)
         {
             imagenn.Load(imagen);
@@ -81,7 +83,7 @@ namespace TP_PROG_3
            
             try
             {
-                if(MessageBox.Show("¿De verdad quieres eliminar este articulo? Una vez eliminado no se podra recuperar", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)== DialogResult.Yes)
+                if(MessageBox.Show("¿De verdad quieres eliminar este articulo? Una vez eliminado no se podra recuperar", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes)
                 {
                     negocio.eliminar(seleccionado.Cod_articulo);
                     MessageBox.Show("Eliminado correctamente");
@@ -163,9 +165,6 @@ namespace TP_PROG_3
             
         }
 
-        private void btnDetalles_Click(object sender, EventArgs e)
-        {
-           
-        }
+
     }
 }
