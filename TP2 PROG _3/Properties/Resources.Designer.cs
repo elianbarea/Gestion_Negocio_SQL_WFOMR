@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace TP2_PROG__3.Properties
+namespace TP2_PROG_3.Properties
 {
     /// <summary>
     ///   Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.

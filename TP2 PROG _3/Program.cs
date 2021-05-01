@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_PROG_3;
 
-namespace TP2_PROG__3
+namespace TP2_PROG_3
 {
     static class Program
     {
@@ -14,6 +15,7 @@ namespace TP2_PROG__3
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new comercio());
