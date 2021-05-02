@@ -17,8 +17,8 @@ namespace Negocio
             public AccesoDatos()//accede a la DB
             {
 
-            ///conexion = new SqlConnection("data source=DESKTOP-UGVRLNH\\SQLEXPRESS; initial catalog=CATALOGO_DB; integrated security=sspi");
-            conexion = new SqlConnection("data source=DESKTOP-CEKNLMQ\\SQLEXPRESS; initial catalog=CATALOGO_DB; integrated security=sspi");
+            conexion = new SqlConnection("data source=DESKTOP-UGVRLNH\\SQLEXPRESS; initial catalog=CATALOGO_DB; integrated security=sspi");
+            ///conexion = new SqlConnection("data source=DESKTOP-CEKNLMQ\\SQLEXPRESS; initial catalog=CATALOGO_DB; integrated security=sspi");
             comando = new SqlCommand();
             }
 

@@ -36,6 +36,7 @@ namespace Negocio
                     ar.Precio = (decimal)datos.Lector["Precio"];
                     ar.Imagen = (string)datos.Lector["ImagenUrl"];
                     ar.Descripcion = (string)datos.Lector["Descripcion"];
+                    
 
                     lista.Add(ar);
 
@@ -57,7 +58,10 @@ namespace Negocio
             }   
 
         }
-
+        public void listarmarcas()
+        {
+            
+        }
         public List<Marca> listarmarca()
         {
             List<Marca> marca = new List<Marca>();
@@ -185,6 +189,15 @@ public void eliminar(string id)
                 datos.cerrarConexion();
             }
 
+
+
+        }
+        public void modificar(Articulo articulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            ///consulta de prueba
+            datos.setearConsulta("update from ARTICULOS set Precio= " + articulo.Precio);
+            datos.ejecutarlectura();
 
 
         }

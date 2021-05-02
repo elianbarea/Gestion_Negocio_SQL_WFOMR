@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
 using Dominio;
+using TP_PROG_3;
+using TP2_PROG_3;
 using TP2_PROG__3;
 
 
@@ -172,9 +174,17 @@ namespace TP_PROG_3
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            FrmAgregar mod = new FrmAgregar(seleccionado);
+            mod.ShowDialog();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            Detalles detalle = new Detalles(seleccionado);
+            detalle.ShowDialog();
+        }
     }
 }

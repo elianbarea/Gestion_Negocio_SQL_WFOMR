@@ -26,7 +26,8 @@ C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\bin\Debug\Negocio.dll
 C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\bin\Debug\Dominio.pdb
 C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\bin\Debug\Negocio.pdb
 C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\obj\Debug\TP2 PROG _3.csproj.CopyComplete
-C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\obj\Debug\TP2_PROG_3.Agregar_Articulo.resources
 C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\obj\Debug\TP_PROG_3.comercio.resources
 C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP_PROG_3.comercio.resources
 C:\TODO\ESTUDIOS\UtN\2º ÑO\PROG 3\Practicas WindowsForm\TPwinform\TP2 PROG _3\obj\Debug\TP2_PROG__3.FrmAgregar.resources
+C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\obj\Debug\TP2_PROG__3.FrmAgregar.resources
+C:\Users\USUARIO\Desktop\TPwinform\tpWinform\TP2 PROG _3\obj\Debug\TP2_PROG__3.Detalles.resources

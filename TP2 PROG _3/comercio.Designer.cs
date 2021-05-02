@@ -36,6 +36,7 @@ namespace TP_PROG_3
             this.btnModificar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.imagenn = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenn)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +73,7 @@ namespace TP_PROG_3
             // 
             this.btnAgregar.Location = new System.Drawing.Point(24, 276);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(147, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(114, 23);
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -80,9 +81,9 @@ namespace TP_PROG_3
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(186, 276);
+            this.btnModificar.Location = new System.Drawing.Point(144, 276);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(141, 23);
+            this.btnModificar.Size = new System.Drawing.Size(118, 23);
             this.btnModificar.TabIndex = 4;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -90,9 +91,9 @@ namespace TP_PROG_3
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(344, 276);
+            this.BtnEliminar.Location = new System.Drawing.Point(268, 276);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(157, 23);
+            this.BtnEliminar.Size = new System.Drawing.Size(120, 23);
             this.BtnEliminar.TabIndex = 5;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
@@ -100,18 +101,29 @@ namespace TP_PROG_3
             // 
             // imagenn
             // 
-            this.imagenn.Location = new System.Drawing.Point(533, 62);
+            this.imagenn.Location = new System.Drawing.Point(507, 62);
             this.imagenn.Name = "imagenn";
-            this.imagenn.Size = new System.Drawing.Size(246, 187);
+            this.imagenn.Size = new System.Drawing.Size(212, 187);
             this.imagenn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenn.TabIndex = 6;
             this.imagenn.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(394, 276);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "detalles";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comercio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(733, 314);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.imagenn);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -138,6 +150,7 @@ namespace TP_PROG_3
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.PictureBox imagenn;
+        private System.Windows.Forms.Button button1;
     }
 }
 
