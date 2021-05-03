@@ -43,6 +43,7 @@ namespace TP_PROG_3
                 /*dgvArticulos.Columns["Marca"].Visible = false;
                 dgvArticulos.Columns["Categoria"].Visible = false;*/
                 dgvArticulos.Columns["Imagen"].Visible = false;
+                dgvArticulos.Columns["Id"].Visible = false;
                 cargarImagen(ListarArticulo[0].Imagen);
 
             }
@@ -82,7 +83,7 @@ namespace TP_PROG_3
             catch (Exception ex)
             {
 
-                throw ex;
+                cargarImagen("https://infomundojuegos.files.wordpress.com/2013/04/image2s.jpeg");
             }
            
         }
@@ -119,58 +120,6 @@ namespace TP_PROG_3
 
         }
 
-        private void txtbuscar_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if(txtbuscar.Text !="")
-            {
-            ///crea una nueva lista articulo donde va a guardar los articulos que coincidan con la busqueda
-            List<Articulo> listaFiltrada = ListarArticulo.FindAll(X => X.Nombre.ToUpper().Contains(txtbuscar.Text.ToUpper()));
-            ///vacia el datagridview
-            dgvArticulos.DataSource = null;
-            ///carga la nueva lista de articulos en el dgv
-            dgvArticulos.DataSource = listaFiltrada;
-                dgvArticulos.Columns["Marca"].Visible = false;
-                dgvArticulos.Columns["Categoria"].Visible = false;
-                dgvArticulos.Columns["Imagen"].Visible = false;
-            }
-            else
-            {
-                ///vacia el datagridview
-                dgvArticulos.DataSource = null;
-                ///carga la nueva lista de articulos en el dgv
-                dgvArticulos.DataSource = ListarArticulo;
-                dgvArticulos.Columns["Marca"].Visible = false;
-                dgvArticulos.Columns["Categoria"].Visible = false;
-                dgvArticulos.Columns["Imagen"].Visible = false;
-            }
-
-        }
-
-        private void btnBuscar_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (txtbuscar.Text != "")
-            {
-                ///crea una nueva lista articulo donde va a guardar los articulos que coincidan con la busqueda
-                List<Articulo> listaFiltrada = ListarArticulo.FindAll(X => X.Nombre.ToUpper().Contains(txtbuscar.Text.ToUpper()));
-                ///vacia el datagridview
-                dgvArticulos.DataSource = null;
-                ///carga la nueva lista de articulos en el dgv
-                dgvArticulos.DataSource = listaFiltrada;
-                dgvArticulos.Columns["Marca"].Visible = false;
-                dgvArticulos.Columns["Categoria"].Visible = false;
-                dgvArticulos.Columns["Imagen"].Visible = false;
-            }
-            else
-            {
-                ///vacia el datagridview
-                dgvArticulos.DataSource = null;
-                ///carga la nueva lista de articulos en el dgv
-                dgvArticulos.DataSource = ListarArticulo;
-                dgvArticulos.Columns["Marca"].Visible = false;
-                dgvArticulos.Columns["Categoria"].Visible = false;
-                dgvArticulos.Columns["Imagen"].Visible = false;
-            }
-        }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
@@ -178,6 +127,7 @@ namespace TP_PROG_3
 
             FrmAgregar mod = new FrmAgregar(seleccionado);
             mod.ShowDialog();
+            cargarGrilla();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -185,6 +135,25 @@ namespace TP_PROG_3
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             Detalles detalle = new Detalles(seleccionado);
             detalle.ShowDialog();
+        }
+
+        private void txtbuscar_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> arti;
+
+            try
+            {
+                if (txtbuscar.Text == "") arti = ListarArticulo;
+                else arti = ListarArticulo.FindAll(PAPA => PAPA.Nombre.ToLower().Contains(txtbuscar.Text.ToLower())); dgvArticulos.DataSource = arti;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+
         }
     }
 }

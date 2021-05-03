@@ -50,8 +50,8 @@ namespace TP2_PROG__3
                 txtImagenD.Text = arti.Imagen;
                 txtPrecioD.Text = arti.Precio.ToString();
                 txtCodigoD.Text = arti.Cod_articulo;
-                cmbMarcaD.SelectedValue = arti.Marca;
-                cmbCategoriaD.SelectedValue = arti.Categoria;
+                cmbMarcaD.SelectedValue = arti.Marca.Id;
+                cmbCategoriaD.SelectedValue = arti.Categoria.Id;
                 cargarImagen(arti.Imagen);
                 
 
@@ -63,7 +63,16 @@ namespace TP2_PROG__3
         }
         public void cargarImagen(string imagen)
         {
-           ptbImagenD.Load(imagen);
+            try
+            {
+                    ptbImagenD.Load(imagen);
+            }
+            catch (Exception)
+            {
+
+                cargarImagen("https://infomundojuegos.files.wordpress.com/2013/04/image2s.jpeg");
+            }
+          
         }
     }
 }

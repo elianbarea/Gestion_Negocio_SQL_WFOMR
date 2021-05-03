@@ -56,7 +56,8 @@ namespace TP_PROG_3
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(393, 20);
             this.txtbuscar.TabIndex = 1;
-            this.txtbuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbuscar_KeyPress);
+            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
+            //this.txtbuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbuscar_KeyPress); ACA ESTOYYYYY
             // 
             // btnBuscar
             // 
@@ -67,7 +68,7 @@ namespace TP_PROG_3
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            this.btnBuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnBuscar_KeyUp);
+            //this.btnBuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnBuscar_KeyUp); ACA ESTOYYYYYYY
             // 
             // btnAgregar
             // 

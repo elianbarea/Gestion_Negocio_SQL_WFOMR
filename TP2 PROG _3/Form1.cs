@@ -47,8 +47,8 @@ namespace TP2_PROG__3
                 txtImagen.Text = arti.Imagen;
                 txtPrecio.Text = arti.Precio.ToString();
                 txtCodigo.Text = arti.Cod_articulo;
-                cmbMarca.SelectedValue = arti.Marca;
-                cmbCategoria.SelectedValue = arti.Categoria;
+                cmbMarca.SelectedValue = arti.Marca.Id;
+                cmbCategoria.SelectedValue = arti.Categoria.Id;
 
             }
             else
@@ -70,6 +70,18 @@ namespace TP2_PROG__3
 
         }
 
+        public bool ValidarTextBox()
+        {
+            if (txtCodigo.Text.Length == 0) return false;
+            if (txtNombre.Text.Length == 0) return false;
+            if (txtDescripcion.Text.Length == 0) return false;
+            if (cmbMarca.SelectedIndex < 0) return false;
+            if (cmbCategoria.SelectedIndex < 0) return false;
+            if (txtImagen.Text.Length == 0) return false;
+            if (txtPrecio.Text.Length == 0) return false;
+            return true;
+        }
+
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
 
@@ -77,26 +89,29 @@ namespace TP2_PROG__3
 
             try
             {
-                ///error aca
-                if (arti ==null )
+                
+                if (ValidarTextBox())
                 {
-                    Articulo A = new Articulo();
 
-                    A.Nombre = txtNombre.Text;
-                    A.Descripcion = txtDescripcion.Text;
-                    A.Marca = (Marca)cmbMarca.SelectedItem;
-                    A.Imagen = txtImagen.Text;
-                    A.Categoria = (Categoria)cmbCategoria.SelectedItem;
-                    A.Precio = Convert.ToDecimal(txtPrecio.Text);
-                    A.Cod_articulo = txtCodigo.Text;
 
-                    negocio.agregar(A);
-                    MessageBox.Show("Agregado perfectamente");
+                    if (arti == null) arti = new Articulo();
+
+                    arti.Cod_articulo = txtCodigo.Text;
+                    arti.Nombre = txtNombre.Text;
+                    arti.Descripcion = txtDescripcion.Text;
+                    arti.Marca = (Marca)cmbMarca.SelectedItem;
+                    arti.Categoria = (Categoria)cmbCategoria.SelectedItem;
+                    arti.Imagen = txtImagen.Text;
+                    arti.Precio = Convert.ToDecimal(txtPrecio.Text);
+
+                    if (arti.id == 0) negocio.agregar(arti);
+
+                    else negocio.modificar(arti);
+
+                    this.Close();
                 }
-                else
-                {
-                    negocio.modificar(arti);
-                }
+
+
 
             }
             catch (Exception ex)

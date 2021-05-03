@@ -19,7 +19,7 @@ namespace Negocio
             try
             {
                 ///datos.setearConsulta("select Codigo, Nombre, Descripcion,Marca,Categoria, ImagenUrl, Precio from ARTICULOS");
-                datos.setearConsulta("select P.Id, P.Codigo,P.Nombre, P.Descripcion, M.Descripcion[Marca], C.Descripcion[Categoria], P.ImagenUrl,P.Precio,M.Id, C.Id from ARTICULOS P, MARCAS M, CATEGORIAS C where P.IdMarca = m.Id AND P.IdCategoria = C.Id");
+                datos.setearConsulta("select P.Id, P.Codigo,P.Nombre, P.Descripcion, M.Descripcion[Marca], C.Descripcion[Categoria], P.ImagenUrl,P.Precio,M.Id idmarca, C.Id idcatego from ARTICULOS P, MARCAS M, CATEGORIAS C where P.IdMarca = m.Id AND P.IdCategoria = C.Id");
                 datos.ejecutarlectura();
 
                 while (datos.Lector.Read())
@@ -30,12 +30,15 @@ namespace Negocio
 
                     ar.Marca = new Marca();
                     ar.Marca.descripcion = (string)datos.Lector["Marca"];
+                    ar.Marca.Id = (int)datos.Lector["idmarca"];
 
                     ar.Categoria = new Categoria();
                     ar.Categoria.descripcion = (string)datos.Lector["Categoria"];
+                    ar.Categoria.Id = (int)datos.Lector["idcatego"];
                     ar.Precio = (decimal)datos.Lector["Precio"];
                     ar.Imagen = (string)datos.Lector["ImagenUrl"];
                     ar.Descripcion = (string)datos.Lector["Descripcion"];
+                    ar.id = (int)datos.Lector["Id"];
                     
 
                     lista.Add(ar);
@@ -192,12 +195,34 @@ public void eliminar(string id)
 
 
         }
-        public void modificar(Articulo articulo)
+        public void modificar(Articulo ar)
         {
             AccesoDatos datos = new AccesoDatos();
             ///consulta de prueba
-            datos.setearConsulta("update from ARTICULOS set Precio= " + articulo.Precio);
-            datos.ejecutarlectura();
+            try
+            {
+                datos.setearConsulta("update ARTICULOS set Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, ImagenUrl = @ImagenUrl, precio = @Precio where id = @Id");
+
+                datos.AgregarParametro("@Id", Convert.ToString(ar.id));
+                datos.AgregarParametro("@codigo", ar.Cod_articulo);
+                datos.AgregarParametro("@nombre", ar.Nombre);
+                datos.AgregarParametro("@descripcion", ar.Descripcion);
+                datos.AgregarParametro("@IdMarca", Convert.ToString(ar.Marca.Id));
+                datos.AgregarParametro("@IdCategoria", Convert.ToString(ar.Categoria.Id));
+                datos.AgregarParametro("@ImagenUrl", ar.Imagen);
+                datos.AgregarParametrodecimal("@Precio", Convert.ToDecimal(ar.Precio));
+
+                datos.ejecutarlectura();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
 
 
         }
